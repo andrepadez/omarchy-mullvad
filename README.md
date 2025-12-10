@@ -8,12 +8,12 @@ A sleek CLI tool for managing Mullvad VPN connections with an interactive menu, 
 ## Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/pastilhas/omarchy-mullvad/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/andrepadez/omarchy-mullvad/main/install.sh | bash
 ```
 
 **Or preview first with `--dry-run`:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/pastilhas/omarchy-mullvad/main/install.sh | bash -- --dry-run
+curl -fsSL https://raw.githubusercontent.com/andrepadez/omarchy-mullvad/main/install.sh | bash -- --dry-run
 ```
 
 ## Table of Contents
@@ -51,7 +51,7 @@ curl -fsSL https://raw.githubusercontent.com/pastilhas/omarchy-mullvad/main/inst
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/pastilhas/omarchy-mullvad
+git clone https://github.com/andrepadez/omarchy-mullvad
 cd omarchy-mullvad
 ```
 

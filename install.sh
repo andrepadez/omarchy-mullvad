@@ -24,7 +24,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-REPO_URL="https://github.com/pastilhas/omarchy-mullvad"
+REPO_URL="https://github.com/andrepadez/omarchy-mullvad"
 INSTALL_DIR="${HOME}/.local/bin"
 MAIN_SCRIPT="omarchy-mullvad.sh"
 
