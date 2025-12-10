@@ -3,15 +3,28 @@
 
 A sleek CLI tool for managing Mullvad VPN connections with an interactive menu, Waybar integration, and Hyprland keybindings.
 
+![Demo](demo.gif)
+
+## Quick Install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/pastilhas/omarchy-mullvad/main/install.sh | bash
+```
+
+**Or preview first with `--dry-run`:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/pastilhas/omarchy-mullvad/main/install.sh | bash -- --dry-run
+```
+
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
   - [Interactive Menu](#interactive-menu)
   - [Status (Waybar)](#status-waybar)
   - [Toggle Connection](#toggle-connection)
   - [Setup Instructions](#setup-instructions)
+- [Installation](#installation)
 - [Configuration](#configuration)
   - [Waybar](#waybar)
   - [Hyprland](#hyprland)
@@ -33,18 +46,6 @@ A sleek CLI tool for managing Mullvad VPN connections with an interactive menu, 
 🎨 **Visual Polish** - Flag emojis, server status indicators, and clean UI
 
 ## Installation
-
-### Quick Install
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/pastilhas/omarchy-mullvad/main/install.sh | bash
-```
-
-### Dry Run (preview without installing)
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/pastilhas/omarchy-mullvad/main/install.sh | bash -- --dry-run
-```
 
 ### Manual Installation
 
