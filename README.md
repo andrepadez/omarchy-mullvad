@@ -1,7 +1,7 @@
 <!-- omit from toc -->
 # Omarchy Mullvad
 
-A sleek CLI tool for managing Mullvad VPN connections with an interactive menu, Waybar integration, and Hyprland keybindings.
+A sleek tool for managing Mullvad VPN connections with an interactive menu, Waybar integration, and Hyprland keybindings.
 
 ![Demo](demo.gif)
 
@@ -12,6 +12,7 @@ curl -fsSL https://raw.githubusercontent.com/andrepadez/omarchy-mullvad/master/i
 ```
 
 **Or preview first with `--dry-run`:**
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/andrepadez/omarchy-mullvad/master/install.sh | bash -- --dry-run
 ```
@@ -50,18 +51,21 @@ curl -fsSL https://raw.githubusercontent.com/andrepadez/omarchy-mullvad/master/i
 ### Manual Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/andrepadez/omarchy-mullvad
 cd omarchy-mullvad
 ```
 
 2. Copy the script to your local bin:
+
 ```bash
 cp omarchy-mullvad.sh ~/.local/bin/
 chmod +x ~/.local/bin/omarchy-mullvad.sh
 ```
 
 3. Create a symlink (optional):
+
 ```bash
 mkdir -p ~/.local/share/omarchy/bin
 ln -s ~/.local/bin/omarchy-mullvad.sh ~/.local/share/omarchy/bin/omarchy-mullvad
@@ -78,6 +82,7 @@ omarchy-mullvad.sh
 ```
 
 Features:
+
 - 🇵🇹 Select country with flag emojis
 - 🏙️ Select city from available relays
 - 🏢 Mullvad-owned servers shown first with building icon
@@ -93,6 +98,7 @@ omarchy-mullvad.sh status
 ```
 
 Output example:
+
 ```json
 {"text":"PT","percentage":100,"class":"connected","icon":"🌎"}
 ```
@@ -168,6 +174,7 @@ bind = SUPER SHIFT, V, mullvad, exec, ~/.local/bin/omarchy-mullvad.sh
 ```
 
 Or use the dispatcher directly:
+
 ```conf
 bind = SUPER SHIFT, V, exec, ~/.local/bin/omarchy-mullvad.sh
 ```
@@ -181,16 +188,19 @@ bind = SUPER SHIFT, V, exec, ~/.local/bin/omarchy-mullvad.sh
 ### Installation
 
 **Arch Linux / Manjaro:**
+
 ```bash
 sudo pacman -S mullvad walker jq
 ```
 
 **Fedora:**
+
 ```bash
 sudo dnf install mullvad walker jq
 ```
 
 **Ubuntu / Debian:**
+
 ```bash
 sudo apt install jq
 # Install mullvad and walker from their respective sources
@@ -199,24 +209,31 @@ sudo apt install jq
 ## Troubleshooting
 
 ### Script not found in PATH
+
 Make sure `~/.local/bin` is in your `$PATH`:
+
 ```bash
 echo $PATH | grep ~/.local/bin
 ```
 
 If not, add to your shell config (`~/.bashrc`, `~/.zshrc`, etc.):
+
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
 ### "No servers match your settings" error
+
 This happens when there are conflicting relay constraints. The script automatically resets these, but if you encounter issues:
+
 ```bash
 mullvad relay set provider any
 ```
 
 ### Walker menu not showing
+
 Ensure you're using a compatible terminal. Recommended:
+
 - WezTerm
 - Alacritty
 - Ghostty
@@ -233,3 +250,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 **Made with ❤️ for Mullvad VPN users**
+
