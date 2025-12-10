@@ -107,7 +107,7 @@ create_share_symlink() {
 # Download script from GitHub
 download_script() {
   local script_name="$1"
-  local script_url="${REPO_URL}/raw/main/${script_name}"
+  local script_url="${REPO_URL}/raw/master/${script_name}"
   local script_path="${INSTALL_DIR}/${script_name}"
   
   print_info "Downloading $script_name..."
